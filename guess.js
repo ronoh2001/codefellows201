@@ -1,27 +1,28 @@
- var greeting = alert('Lets play a game');
-
-    var name = prompt('what is your name?');
+  var greeting = alert('Lets play a game');
+  var name = prompt('what is your name?');
     alert('Nice to meet you'+' '+name);
 
-    var age = prompt('how old are you?');
-    var differentAge = (42 - age);
-    var youngAge = (age - 42);
-   
-
-       var numberCorrect = 0;
-
+  var age = prompt('how old are you?');
+  var differentAge = (42 - age);
+  var youngAge = (age - 42);
+  
+  var numberCorrect = 0;
+  
     var input1 = prompt("Does Ron have children?").toLowerCase();
 
     if ((input1 === "yes")||(input1 === "y")) {
       numberCorrect++;
-      alert("You are right! He has two boys!" );
+     
+      alert("You are right! He has two boys!" ) ;
+      children(); 
+
     }
      else  {
       alert("Sorry you're wrong.  He has 2 boys");
+      children();
+      
     }
-
-
-function children() {
+    function children() {
     var x = document.getElementById("truck").src;
     document.getElementById("child").innerHTML = x;
 }
@@ -32,9 +33,13 @@ function children() {
     if ((input2 === "yes")||(input2 === "y")) {
       numberCorrect++;
       alert("you're right! He is the General Manager at the Holiday Inn Express!");
-    } else{
+
+  } 
+    else{
       alert("Sorry ...you're wrong.  He is the General Manager at the Holiday Inn Express");
-    }
+
+  }
+
 function hotel() {
     var x = document.getElementById("hotel").src;
     document.getElementById("job").innerHTML = x;
@@ -45,9 +50,11 @@ function hotel() {
     if ((input3 === "yes")||(input3 === "y")) {
       numberCorrect++;
       alert("Your right he plays the cello!");
+      
     }
     else {
       alert("Sorry you are wrong.  He plays the cello");
+      
     }
 function cello() {
     var x = document.getElementById("cello").src;
