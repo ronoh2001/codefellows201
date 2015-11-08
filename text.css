@@ -1,0 +1,12 @@
+
+body {
+	background-color: lightblue;
+
+}
+h1 {
+	font-family: Impact; color: darkblue; 
+
+}
+#desc{
+	color: black; border: solid red;
+}
