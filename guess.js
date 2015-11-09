@@ -11,21 +11,29 @@
     var input1 = prompt("Does Ron have children?").toLowerCase();
 
     if ((input1 === "yes")||(input1 === "y")) {
-      numberCorrect++;
-     
-      alert("You are right! He has two boys!" ) ;
-      children(); 
+
+        numberCorrect++;  
+        alert("You are right! He has two boys!" ) ;
+        children(); 
 
     }
      else  {
-      alert("Sorry you're wrong.  He has 2 boys");
-      children();
+
+        alert("Sorry you're wrong.  He has 2 boys");
+        children();
       
     }
     function children() {
-    var x = document.getElementById("truck").src;
-    document.getElementById("child").innerHTML = x;
+    var x = document.createElement("child");
+    x.setAttribute("src", "truck.jpg");
+    document.body.appendChild(x);
 }
+    // function children() {
+    // document.getElementById("img id=child1").src = "truck.jpg";
+//       function children() {
+//       var x = document.getElementById("child").src = "truck.jpg";
+//       document.getElementById("truck").innerHTML = x;
+// }
 
     var input2 = prompt("Is Ron a Hotel Manager?").toLowerCase();
 
@@ -40,10 +48,10 @@
 
   }
 
-function hotel() {
-    var x = document.getElementById("hotel").src;
-    document.getElementById("job").innerHTML = x;
-}
+// function hotel() {
+//     var x = document.getElementById("hotel").src;
+//     document.getElementById("job").innerHTML = x;
+// }
 
     var input3=prompt("Does Ron  I play a musical instrument?").toLowerCase();
 
@@ -83,9 +91,9 @@ function cello() {
     }
 
 
-  var input6 = prompt("Guess how old Ron? is");
+  var input6 = prompt("Guess how old Ron is?");
 
-    if (input6 == 42) {
+    if (parseInt(input6) === 42) {
     numberCorrect++;
 
       alert("Your right! He is 42 years OLD!");
@@ -95,7 +103,7 @@ function cello() {
 
    }
      if (age <= 42) {
-    alert('he is' + differentAge +' years older than you');}
+    alert('he is ' + differentAge +' years older than you');}
 
       else {
        alert("wow he is" + " " + youngAge + " " + "younger than you are!");
